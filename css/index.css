@@ -1,0 +1,334 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	font-size: 12px;
+}
+li{
+	list-style-type: none;
+	display: inline-block;
+}
+h2{
+	color: white;
+	margin-top: 20px;
+	margin-left: 50px;
+	display: inline-block;
+}
+.main-header{
+	height: 70px;
+	width: 100%;
+	background-color: black;
+	display: inline-block;
+	position: fixed;
+
+}
+.logo h2{
+	color: #fff;
+	display: inline-block;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+.lines{
+	border:1px solid #fff;
+	padding: 4px;
+	height: 10px;
+	left: 20px;
+	top: 10px;
+	position: absolute;
+	display: inline-block;
+}
+.main-nav{
+	display: inline-block;
+	float: right;
+	margin-right: 60px;
+	margin-top: 25px;
+}
+.main-ul{
+	display: inline-block;
+	
+}
+li{
+	margin-right: 40px;
+}
+li a{
+	text-transform: uppercase;
+	font-weight: bolder;
+	color: #fff;
+}
+
+li a:hover {
+	width: 80px;
+	padding-top: 10px;
+	border-top: 2px solid orange;
+	
+}
+
+.logo-line{
+	padding: 5px;
+	border:2px solid #fff;
+	height: 40px;
+	position: absolute;
+	top:15px;
+	left: 25px;
+}
+
+
+.img-header img{
+   width: 100%;
+    height: 250px;
+    
+
+}
+.text-absolute{
+	background-color: black;
+	opacity: 0.5;
+	width: 450px;
+	position: absolute;
+	top: 90px;
+	left: 30px;
+	line-height: 40px;
+	font-size: 16px;
+	font-weight: bolder;
+	color: white;
+}
+
+
+
+.grid-container{
+	margin-left: 100px;
+	margin-right: 100px;
+	   display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 20px;
+}
+
+.main-blog{
+      height: 420px;
+ box-shadow: 2px 3px 4px black;
+}
+.blog-header{
+	border-bottom: 1px solid black;
+	width: 100%;
+}
+.side{
+	height: 420px;
+	 box-shadow: 2px 3px 4px black;
+
+}
+.title p {
+	color: orange;
+}
+
+
+
+
+.img-container img{
+	margin-left: 35px;
+	width: 90%;
+	height: 280px;
+
+}
+
+.date{
+	display: inline-block;
+	width: 70px;
+	border-right: 2px solid black;
+	height: 55px;
+	position: absolute;
+}
+
+.title{
+	display: inline-block;
+	margin-left: 120px;
+}
+
+
+.search-container{
+	height: 60px;
+	background-color:#fff;
+	border-bottom: 1px solid black;
+}
+
+.search{
+	position: absolute;
+	top: 267px;
+	left: 910px;
+}
+input{
+	padding: 9px;
+	width: 300px;
+	background-color: #F2F2F2;
+	border:none;
+	border-radius: 3px;
+	outline: none;
+
+}
+.aside-header{
+	display: flex;
+	justify-content: flex-start;
+
+}
+.aside-header h2{
+	font-size: 16px;
+	text-transform: uppercase;
+	padding:10px 10px ;
+	margin-bottom: 20px;
+}
+.aside-header .one {
+	background-color: #fff;
+	color: black;
+	height: 40px;
+	margin-top: 10px;
+
+
+}
+.aside-header .two{
+	background-color: #f2f2f2;
+	color: black;
+	height: 40px;
+	margin-top: 10px;
+
+}
+.blog-1{
+	
+}
+
+.blog-1 img{
+	height: 40px;
+	width: 40px;
+	margin-bottom: 25px;
+}
+.blog-1 h4{
+	display: inline-block;
+	position: absolute;
+	margin-top: 1px;
+	margin-left: 10px;
+}
+
+
+.blog-1 p {
+	display: inline-block;
+	position: absolute;
+	margin-top: 30px;
+	margin-left: 10px;
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right:50px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+@media only screen and (max-width: 900px) {
+	.main-nav{
+		display: none;
+	}
+	.container{
+		display: inline-block;
+	}
+
+}
+@media only screen and (max-width: 980px) {
+	.side {
+		display: none;
+	}
+	.main-blog{
+		margin: 0;
+		width: 900px;
+	}
+	.grid-container{
+	margin-left: 0;
+	margin-right: 0;
+    display: inline-block;
+
+}
+}
+@media only screen and (max-width: 920px) {
+	.side {
+		display: none;
+	}
+	.main-blog{
+margin:0;
+		width: 800px;
+	}
+	.grid-container{
+	margin-left: 0;
+	margin-right: 0;
+    display: inline-block;
+
+}
+}
+
+@media only screen and (max-width: 600px) {
+	.side {
+		display: none;
+	}
+	.main-blog{
+			margin: 0;
+		width: 480px;
+	}
+	.grid-container{
+	margin-left: 0;
+	margin-right: 0;
+    display: inline-block;
+
+}
+.main-header{
+	height: 70px;
+	width: 100%;
+	background-color: black;
+	display: inline-block;
+	position: fixed;
+	z-index: 9999;
+
+}
+	.container{
+		display: inline-block;
+			z-index: 9999;
+			position: fixed;
+	}
+}
